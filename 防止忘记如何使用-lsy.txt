@@ -1,0 +1,24 @@
+🚀 如何使用这个项目
+环境设置：安装 requirements.txt 中的所有库（pip install -r requirements.txt）。
+
+准备数据：
+
+创建 data/images/ 目录，并放入您所有的 ct_scan_xxx.nii.gz 文件。
+
+(关键步骤) 根据您的BBX文件，手动创建 data/labels.json 文件，格式如上所示。
+
+配置：打开 config.py。
+
+(关键步骤) 更新 LABEL_MAP，使其包含您所有希望识别的ROI标签。
+
+根据您的GPU显存调整 BATCH_SIZE (3D U-Net 通常只能设为 1)。
+
+调整 RESIZE_SHAPE (128, 128, 128) 是一个合理的开始，显存够大可以尝试 (192, 192, 192)。
+
+(可选) 测试数据加载：运行 python data_loader.py。如果它成功打印 "数据加载器测试成功!"，说明您的 labels.json 和 utils.py 逻辑是正确的。
+
+训练模型：运行 python train.py。这将开始训练，并根据验证集损失自动将最佳模型保存为 ct_roi_model.pth。
+
+执行推理：运行 python inference.py。这将加载训练好的模型，并演示如何使用 get_roi_bbox_from_text 函数来满足您的（图像+文本 -> BBX）的需求。
+
+这个框架为您提供了一个完整、可运行（在您提供数据之后）的医学图像识别项目。

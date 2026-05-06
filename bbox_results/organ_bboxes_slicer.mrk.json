@@ -1,0 +1,123 @@
+{
+  "@schema": "https://raw.githubusercontent.com/slicer/slicer/master/Modules/Loadable/Markups/Resources/Schema/markups-schema-v1.0.0.json",
+  "markups": [
+    {
+      "id": "MarkupsROI_0",
+      "name": "Organ_Bounding_Boxes",
+      "type": "ROI",
+      "coordinateSystem": "LPS",
+      "coordinateUnits": "mm",
+      "created": "2025-12-02T09:34:15.790515",
+      "modified": "2025-12-02T09:34:15.791105",
+      "description": "Automatically generated organ bounding boxes from pixel-wise annotations",
+      "controlPoints": [],
+      "roi": {
+        "type": "RAS",
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "selected": true
+      },
+      "display": {
+        "visibility": true,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "opacity": 0.3,
+        "lineWidth": 2.0,
+        "pointSize": 5.0,
+        "selectedColor": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "selectedOpacity": 0.8
+      }
+    },
+    {
+      "id": "MarkupsROI_1",
+      "name": "\u809d\u810f",
+      "type": "ROI",
+      "coordinateSystem": "LPS",
+      "coordinateUnits": "mm",
+      "created": "2025-12-02T09:34:15.791138",
+      "modified": "2025-12-02T09:34:15.791140",
+      "description": "Bounding box for \u809d\u810f (label: 1)",
+      "controlPoints": [],
+      "roi": {
+        "type": "RAS",
+        "center": [
+          -47.36328125,
+          7.32421875,
+          1883.447509765625
+        ],
+        "radius": [
+          12.6953125,
+          20.5078125,
+          24.0
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "selected": true
+      },
+      "display": {
+        "visibility": true,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "opacity": 0.3,
+        "lineWidth": 2.0,
+        "pointSize": 5.0,
+        "selectedColor": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "selectedOpacity": 0.8
+      }
+    }
+  ]
+}

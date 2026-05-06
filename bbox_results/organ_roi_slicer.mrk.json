@@ -1,0 +1,55 @@
+{
+  "@schema": "https://raw.githubusercontent.com/slicer/slicer/master/Modules/Loadable/Markups/Resources/Schema/markups-schema-v1.0.0.json",
+  "markups": [
+    {
+      "id": "MarkupsROI_0",
+      "name": "肝脏",
+      "type": "ROI",
+      "coordinateSystem": "RAS",
+      "coordinateUnits": "mm",
+      "roi": {
+        "center": [
+          -48.828125,
+          -21.484375,
+          1925.447509765625
+        ],
+        "radius": [
+          74.70703125,
+          84.47265625,
+          69.0
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "visible": true,
+        "selected": true
+      },
+      "display": {
+        "visibility": true,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "opacity": 0.6,
+        "lineWidth": 3.0,
+        "fillOpacity": 0.2,
+        "pointSize": 6.0,
+        "selectedColor": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selectedOpacity": 0.9
+      }
+    }
+  ]
+}

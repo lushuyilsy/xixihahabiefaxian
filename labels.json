@@ -1,0 +1,26 @@
+[
+    {
+        "image_id": "ct_scan_001.nii.gz",
+        "rois": [
+            {
+                "label": "liver",
+                "bbox_xyz": [30, 45, 100, 150, 180, 200]
+            },
+            {
+                "label": "kidney",
+                "bbox_xyz": [60, 80, 110, 100, 120, 150],
+                
+            }
+        ]
+    },
+    {
+        "image_id": "ct_scan_002.nii.gz",
+        "rois": [
+            {
+                "label": "liver",
+                "bbox_xyz": [25, 40, 90, 140, 170, 190]
+            }
+        ]
+    }
+]
+//注意： bbox_xyz 格式我假设为 [x_min, y_min, z_min, x_max, y_max, z_max]。您需要根据您的数据格式进行调整。
