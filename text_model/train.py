@@ -1,10 +1,9 @@
 import torch
 import torch.optim as optim
-from torch.utils.data import DataLoader
 from tqdm import tqdm
-import config
-from model import get_model
-from data_loader import get_data_loaders
+from text_model import config
+from text_model.model import get_model
+from text_model.data_loader import get_data_loaders
 from monai.losses import DiceLoss
 
 
